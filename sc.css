@@ -1,6 +1,30 @@
 @charset "UTF-8";
 
-/*! normalize.css v7.0.0 | MIT License | github.com/lamborshea/SC.css */
-body {
-    font-family: sans-serif;
+/*! sc.css v1.0.0 github.com/lamborshea/SC.css */
+
+/* 为了简化换算，将根目录的字体小写置为10px;子元素的值写成 em 的形式可以了，比如1.6em 就等于16px; */
+html {
+    font-size: 62.5%;
+    color: #333;
+    background-color: #fff;
+    text-rendering: optimizeLegibility;/* 增强易读性 */
 }
+
+/* 字体，可自定义; 表单元素并不继承父级 font */
+ body,button, input, select, textarea {
+  font: 300 1.6rem/1.8 -apple-system, BlinkMacSystemFont,Verdana, "Helvetica Neue", Helvetica,PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica,PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-weight: 100;
+  color: #000;
+  line-height: 1.35;
+}
+
+html,body,span,a{
+  margin: 0;
+  padding: 0;
+}
+
+/* -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif; */
